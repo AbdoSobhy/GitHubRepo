@@ -12,6 +12,14 @@
 		526A614A262F2FA10067E5D3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 526A6149262F2FA10067E5D3 /* Assets.xcassets */; };
 		526A614D262F2FA10067E5D3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526A614B262F2FA10067E5D3 /* LaunchScreen.storyboard */; };
 		526A6161262F30E30067E5D3 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A6160262F30E30067E5D3 /* ApiRequest.swift */; };
+		526A6166262F31220067E5D3 /* Repositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A6165262F31220067E5D3 /* Repositories.swift */; };
+		526A616A262F31420067E5D3 /* Repos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A6169262F31420067E5D3 /* Repos.swift */; };
+		526A616D262F314F0067E5D3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 526A616C262F314F0067E5D3 /* Main.storyboard */; };
+		526A6172262F315A0067E5D3 /* ReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A616F262F315A0067E5D3 /* ReposViewModel.swift */; };
+		526A6173262F315A0067E5D3 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A6170262F315A0067E5D3 /* RepoTableViewCell.swift */; };
+		526A6174262F315A0067E5D3 /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A6171262F315A0067E5D3 /* ReposViewController.swift */; };
+		526A6179262F31A40067E5D3 /* Alert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A6177262F31A40067E5D3 /* Alert+Extension.swift */; };
+		526A617A262F31A40067E5D3 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A6178262F31A40067E5D3 /* Dynamic.swift */; };
 		76B520B890C1A7DEB0E24918 /* Pods_GitHubRepos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36088E267010FFB072E46B2 /* Pods_GitHubRepos.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +31,14 @@
 		526A614C262F2FA10067E5D3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		526A614E262F2FA10067E5D3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		526A6160262F30E30067E5D3 /* ApiRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		526A6165262F31220067E5D3 /* Repositories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repositories.swift; sourceTree = "<group>"; };
+		526A6169262F31420067E5D3 /* Repos.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repos.swift; sourceTree = "<group>"; };
+		526A616C262F314F0067E5D3 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		526A616F262F315A0067E5D3 /* ReposViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposViewModel.swift; sourceTree = "<group>"; };
+		526A6170262F315A0067E5D3 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		526A6171262F315A0067E5D3 /* ReposViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposViewController.swift; sourceTree = "<group>"; };
+		526A6177262F31A40067E5D3 /* Alert+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert+Extension.swift"; sourceTree = "<group>"; };
+		526A6178262F31A40067E5D3 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
 		7C9880A4FECB6B305592101C /* Pods-GitHubRepos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubRepos.release.xcconfig"; path = "Target Support Files/Pods-GitHubRepos/Pods-GitHubRepos.release.xcconfig"; sourceTree = "<group>"; };
 		940956E0F6D77EC409D78EBE /* Pods-GitHubRepos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubRepos.debug.xcconfig"; path = "Target Support Files/Pods-GitHubRepos/Pods-GitHubRepos.debug.xcconfig"; sourceTree = "<group>"; };
 		F36088E267010FFB072E46B2 /* Pods_GitHubRepos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubRepos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -61,10 +77,13 @@
 		526A613F262F2F9E0067E5D3 /* GitHubRepos */ = {
 			isa = PBXGroup;
 			children = (
-				526A615F262F30DA0067E5D3 /* Service */,
 				526A615D262F307C0067E5D3 /* Configuration */,
 				526A6159262F30320067E5D3 /* Core */,
 				526A615C262F30660067E5D3 /* Resources */,
+				526A617C262F31A70067E5D3 /* Helper */,
+				526A615F262F30DA0067E5D3 /* Service */,
+				526A6164262F31130067E5D3 /* Model */,
+				526A6168262F31310067E5D3 /* Repo */,
 				526A615A262F303C0067E5D3 /* Epic */,
 			);
 			path = GitHubRepos;
@@ -82,6 +101,8 @@
 		526A615A262F303C0067E5D3 /* Epic */ = {
 			isa = PBXGroup;
 			children = (
+				526A616C262F314F0067E5D3 /* Main.storyboard */,
+				526A6176262F31650067E5D3 /* SearchScreen */,
 			);
 			path = Epic;
 			sourceTree = "<group>";
@@ -109,6 +130,41 @@
 				526A6160262F30E30067E5D3 /* ApiRequest.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		526A6164262F31130067E5D3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				526A6165262F31220067E5D3 /* Repositories.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		526A6168262F31310067E5D3 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				526A6169262F31420067E5D3 /* Repos.swift */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		526A6176262F31650067E5D3 /* SearchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				526A6171262F315A0067E5D3 /* ReposViewController.swift */,
+				526A616F262F315A0067E5D3 /* ReposViewModel.swift */,
+				526A6170262F315A0067E5D3 /* RepoTableViewCell.swift */,
+			);
+			path = SearchScreen;
+			sourceTree = "<group>";
+		};
+		526A617C262F31A70067E5D3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				526A6177262F31A40067E5D3 /* Alert+Extension.swift */,
+				526A6178262F31A40067E5D3 /* Dynamic.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		8AF85521B4C6CAC6E4F2FD44 /* Pods */ = {
@@ -187,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526A616D262F314F0067E5D3 /* Main.storyboard in Resources */,
 				526A614D262F2FA10067E5D3 /* LaunchScreen.storyboard in Resources */,
 				526A614A262F2FA10067E5D3 /* Assets.xcassets in Resources */,
 			);
@@ -241,8 +298,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				526A616A262F31420067E5D3 /* Repos.swift in Sources */,
+				526A617A262F31A40067E5D3 /* Dynamic.swift in Sources */,
 				526A6141262F2F9E0067E5D3 /* AppDelegate.swift in Sources */,
+				526A6172262F315A0067E5D3 /* ReposViewModel.swift in Sources */,
+				526A6173262F315A0067E5D3 /* RepoTableViewCell.swift in Sources */,
+				526A6174262F315A0067E5D3 /* ReposViewController.swift in Sources */,
+				526A6166262F31220067E5D3 /* Repositories.swift in Sources */,
 				526A6143262F2F9E0067E5D3 /* SceneDelegate.swift in Sources */,
+				526A6179262F31A40067E5D3 /* Alert+Extension.swift in Sources */,
 				526A6161262F30E30067E5D3 /* ApiRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -30,11 +30,11 @@ class RealmManger {
         }
     }
     
-    static func getObjects<T: Object>(_ model: T.Type, completion: (([T]) -> ())) {
-        let objects = realm.objects(model)
+    static func getObjects<T: Object>(_ model: T.Type, limit: Int, page: Int, completion: (([T]) -> ())) {
+        let objects = realm.objects(model)        
         var accumulate: [T] = [T]()
-        for object in objects {
-            accumulate.append(object)
+        for offset in (limit * page)..<(limit * (page + 1)) {
+            accumulate.append(objects[offset])
         }
         completion(accumulate)
     }

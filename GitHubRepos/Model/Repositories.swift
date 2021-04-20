@@ -6,18 +6,44 @@
 //
 
 import Foundation
+import RealmSwift
 
-struct Repositories: Codable {
-    let id: Int
-    let name: String
-    let owner: Owner
+class Repositories: Object, Codable {
+    dynamic var id: Int = 0
+    dynamic var name: String = ""
+    dynamic var owner: Owner = Owner()
+    
+    required init() {
+        self.id = 0
+        self.name = ""
+        self.owner = Owner()
+    }
+    
+    init(id: Int, name: String, owner: Owner) {
+        self.id = id
+        self.name = name
+        self.owner = owner
+    }
+    
 }
 
 // MARK: - Owner
-struct Owner: Codable {
-    let id: Int
-    let login: String
-    let avatarURL: String
+class Owner: Codable {
+    dynamic var id: Int = 0
+    dynamic var login: String = ""
+    dynamic var avatarURL: String = ""
+    
+    init() {
+        self.id = 0
+        self.login = ""
+        self.avatarURL = ""
+    }
+    
+    init(id: Int, login: String, avatarURL: String) {
+        self.id = id
+        self.login = login
+        self.avatarURL = avatarURL
+    }
 
     enum CodingKeys: String, CodingKey {
         case login, id

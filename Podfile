@@ -7,5 +7,6 @@ target 'GitHubRepos' do
 
   # Pods for GitHubRepos
 pod 'SwiftyJSON', '~> 4.0'
+pod 'RealmSwift', '~> 4.4.1'
 
 end

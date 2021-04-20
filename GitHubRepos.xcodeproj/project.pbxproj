@@ -20,6 +20,7 @@
 		526A6174262F315A0067E5D3 /* ReposViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A6171262F315A0067E5D3 /* ReposViewController.swift */; };
 		526A6179262F31A40067E5D3 /* Alert+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A6177262F31A40067E5D3 /* Alert+Extension.swift */; };
 		526A617A262F31A40067E5D3 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A6178262F31A40067E5D3 /* Dynamic.swift */; };
+		526A6181262F33770067E5D3 /* RealmManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526A6180262F33770067E5D3 /* RealmManger.swift */; };
 		76B520B890C1A7DEB0E24918 /* Pods_GitHubRepos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F36088E267010FFB072E46B2 /* Pods_GitHubRepos.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +40,7 @@
 		526A6171262F315A0067E5D3 /* ReposViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReposViewController.swift; sourceTree = "<group>"; };
 		526A6177262F31A40067E5D3 /* Alert+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert+Extension.swift"; sourceTree = "<group>"; };
 		526A6178262F31A40067E5D3 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		526A6180262F33770067E5D3 /* RealmManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManger.swift; sourceTree = "<group>"; };
 		7C9880A4FECB6B305592101C /* Pods-GitHubRepos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubRepos.release.xcconfig"; path = "Target Support Files/Pods-GitHubRepos/Pods-GitHubRepos.release.xcconfig"; sourceTree = "<group>"; };
 		940956E0F6D77EC409D78EBE /* Pods-GitHubRepos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GitHubRepos.debug.xcconfig"; path = "Target Support Files/Pods-GitHubRepos/Pods-GitHubRepos.debug.xcconfig"; sourceTree = "<group>"; };
 		F36088E267010FFB072E46B2 /* Pods_GitHubRepos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GitHubRepos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +84,7 @@
 				526A615C262F30660067E5D3 /* Resources */,
 				526A617C262F31A70067E5D3 /* Helper */,
 				526A615F262F30DA0067E5D3 /* Service */,
+				526A617F262F335B0067E5D3 /* Database */,
 				526A6164262F31130067E5D3 /* Model */,
 				526A6168262F31310067E5D3 /* Repo */,
 				526A615A262F303C0067E5D3 /* Epic */,
@@ -165,6 +168,14 @@
 				526A6178262F31A40067E5D3 /* Dynamic.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		526A617F262F335B0067E5D3 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				526A6180262F33770067E5D3 /* RealmManger.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		8AF85521B4C6CAC6E4F2FD44 /* Pods */ = {
@@ -305,6 +316,7 @@
 				526A6173262F315A0067E5D3 /* RepoTableViewCell.swift in Sources */,
 				526A6174262F315A0067E5D3 /* ReposViewController.swift in Sources */,
 				526A6166262F31220067E5D3 /* Repositories.swift in Sources */,
+				526A6181262F33770067E5D3 /* RealmManger.swift in Sources */,
 				526A6143262F2F9E0067E5D3 /* SceneDelegate.swift in Sources */,
 				526A6179262F31A40067E5D3 /* Alert+Extension.swift in Sources */,
 				526A6161262F30E30067E5D3 /* ApiRequest.swift in Sources */,
